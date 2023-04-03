@@ -1,4 +1,5 @@
 import './grid.css';
+import PropTypes from 'prop-types';
 // apjuosiantis elementas suteikiantis papildomu stiliaus ar funkciju dalyku
 function Grid(props) {
   const inlineStyleObj = {
@@ -11,4 +12,10 @@ function Grid(props) {
     </div>
   );
 }
+
+Grid.propTypes = {
+  cols: PropTypes.number,
+  children: PropTypes.element,
+}
+
 export default Grid;
