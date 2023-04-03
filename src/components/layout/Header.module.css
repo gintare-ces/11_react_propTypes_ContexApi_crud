@@ -1,0 +1,28 @@
+.header {
+    background-color: #38598b;
+    color: #fff;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    padding: 0.8em 1.6em;
+    background-color: #38598b;
+    gap: 1rem;
+    color: #fff;
+}
+.navLink {
+  padding: 0.8em 1.6em;
+  background-color: #38598b;
+  font-size: 1.8rem;
+}
+.navLink:hover {
+    background-color: #e7eaf6;
+    color: #113f67;
+}
+.navLink:active {
+    background-color: #a2a8d3;
+    color: #113f67;
+}
