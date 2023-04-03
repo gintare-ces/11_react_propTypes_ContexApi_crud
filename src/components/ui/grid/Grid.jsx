@@ -1,4 +1,4 @@
-import './grid.css';
+import css from './Grid.module.css'
 import PropTypes from 'prop-types';
 // apjuosiantis elementas suteikiantis papildomu stiliaus ar funkciju dalyku
 function Grid(props) {
@@ -7,7 +7,7 @@ function Grid(props) {
     gridTemplateColumns: `repeat(${props.cols}, 1fr)`,
   };
   return (
-    <div style={inlineStyleObj} className={'myGrid'}>
+    <div style={inlineStyleObj} className={css.grid}>
       {props.children}
     </div>
   );

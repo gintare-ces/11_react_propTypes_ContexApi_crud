@@ -1,19 +1,17 @@
 import './styles/reset.css';
 import './styles/App.css';
-import Grid from './components/ui/grid/Grid';
-import Card from './components/ui/card/Card';
+import Button from './components/ui/button/Button';
+
 
 function App() {
+
+  function testBtn() {
+    console.count('paspaudei mygtuka')
+  }
   return (
     <div className='container'>
-      <Grid cols={1}>
-        <h1>New project</h1>
-        <p>Hello</p>
-      </Grid>
-      <Card className={'tac'}>
-        <h2>New project</h2>
-        <p>Hello</p>
-      </Card>
+      <h1>Users</h1>
+      <Button onClick={testBtn} className='mb20'>Click me</Button>
     </div>
   );
 }
